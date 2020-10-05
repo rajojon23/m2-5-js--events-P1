@@ -7,6 +7,28 @@
 
 const combineArrays = (arr1, arr2) => {
   // Insert missing solution please
+
+  let new_arr = []
+  if((typeof(arr1) != "string"|| typeof(arr2) != "string" ) && ( !Array.isArray(arr1)|| !Array.isArray(arr2))){
+  	return undefined;
+  }
+ 
+
+
+
+  arr1.forEach((item)=>{
+  	new_arr.push(item);
+  	new_arr.sort();
+  });
+
+
+  arr2.forEach((item)=>{
+  	new_arr.push(item);
+  	new_arr.sort();
+  });
+
+
+  return new_arr; 
 };
 
 // 2. Do a console.log to verify your function.

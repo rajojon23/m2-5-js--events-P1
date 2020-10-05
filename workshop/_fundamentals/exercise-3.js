@@ -14,6 +14,21 @@ let foodPairings = {
 
 const getPairing = (key) => {
   // Insert missing solution please
+  let pairing = "";
+  if(typeof(key) != "string"){
+  		return "I didn't get that";
+  }
+
+	Object.keys(foodPairings).forEach((food) => {
+ 
+		if(food === key){
+
+      pairing = foodPairings[food];
+		}
+			
+	});
+return pairing;
+
 };
 
 // 2. Do a console.log to verify your function.

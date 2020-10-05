@@ -7,6 +7,20 @@
 
 const getValues = (arr, key) => {
   // Insert missing solution please
+  let new_arr = [];
+
+
+  arr.forEach((item)=>{
+  	new_arr.push(item[key]);
+  });
+  
+
+  if(new_arr.length <=0){
+  	new_arr = null;
+  };
+
+  return new_arr;
+
 };
 
 // 2. Do a console.log to verify your function.
